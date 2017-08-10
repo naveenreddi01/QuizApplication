@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body,html {
+    		
+    		
+    		background-color:#1D9988  ;
+
+   			 /* Full height */
+   			 height: 100%; 
+
+   			 /* Center and scale the image nicely */
+  			 background-position: center;
+   			 background-repeat: no-repeat;
+   			 background-size: cover;
+
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		function myfunction(){
+			
+			var id=document.getElementById("one").value;
+			var name=document.getElementById("two").value;
+			var user=document.getElementById("three").value;
+			var cuser=document.getElementById("four").value;
+			var pass=document.getElementById("five").value;
+			var cpass=document.getElementById("six").value;
+			var add=document.getElementById("seven").value;
+			
+			if(user.equals(cuser) && pass.equals(cpass)){
+				alert("User Name and Password Not Match");
+			}
+		}
+	</script>
+</head>
+<body>
+		<form action="TeacherDataInsertion" method="get"  onsubmit="return myfunction()">
+		<div class="container">
+			<center><h1   style="color:#641E16     ;font-size: 70px;">Quizer</h1></center>
+		
+		</div>
+	
+	
+		<br><br>
+	
+		<div class="container-fluid" style="background-color: white">
+		
+		<br><br>
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-8">
+				<h1><b>Create An Account Into Quizer</b></h1>
+				</div>
+			</div>
+			<br><br>
+				
+			<div class="row">
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>Name:</label></div>
+					<div class="col-xs-4">
+					<input type="text" name="name" id="two"><br><br></div></div>
+			<div class="row">
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>UserName:</label></div>
+					<div class="col-xs-4">
+					<input type="text" name="user" id="three"><br><br></div></div>
+			<div class="row">		
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>Confirm UserName:</label></div>
+					<div class="col-xs-4">
+					<input type="text" name="user" id="four"><br><br></div></div>
+			<div class="row">		
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>Password:</label></div>
+					<div class="col-xs-4">
+					<input type="Password" name="password" id="five"><br><br></div></div>
+			<div class="row">		
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>Confirm Password:</label></div>
+					<div class="col-xs-4">
+					<input type="Password" name="password" id="six"><br><br></div></div>
+			
+			
+			<div class="row">		
+					<div class="col-xs-4"></div>
+					<div class="col-xs-2">
+					<label>City/Town:</label></div>
+					<div class="col-xs-2">
+					<input type="text" name="city" id="seven"><br><br>
+					<center><button type="submit" class="btn btn-default">Submit</button></center>
+					<br>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5"></div>
+				<div class="col-xs-6">
+					
+				</div>
+				
+			</div>
+			<br>
+			<br>
+		</div>
+		
+		</form>
+	</body>
+</html>

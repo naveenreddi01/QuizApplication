@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body,html {
+    		
+    		
+    		background-color:#1D9988  ;
+
+   			 /* Full height */
+   			 height: 100%; 
+
+   			 /* Center and scale the image nicely */
+  			 background-position: center;
+   			 background-repeat: no-repeat;
+   			 background-size: cover;
+
+		}
+		.col-xs-5{
+			position:absolute;
+			top:25px;
+			right:80px;
+			font-size:20px;
+		}
+		p{
+			position:absolute;
+			top:-15px;
+			left:-35px;
+			
+		}
+		.two{
+			background-color: white;
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		function myfunction(){
+			
+			var user=document.getElementById("one").value;
+			var pass=document.getElementById("two").value;
+			
+			if(user==0 && pass==0){
+				alert("enter username and password");
+			}
+		}
+	</script>
+</head>
+<body>
+		<form action="FirstServlet" method="get">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-2">
+					<h1   style="color:#641E16     ;font-size: 50px;">Quizer</h1>
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-5">
+					 <ul class="nav navbar-nav navbar-right">
+	      				<li><a href="Addsubject.html" style="color:#283747;"><span class="glyphicon glyphicon-user"></span> Teacher</a></li>
+	     			 	<li><a href="TeacherLogin.html" style="color:#283747;"><span class="glyphicon glyphicon-log-in"></span> SignOut</a></li>
+	   				 </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-3">
+				<strong><p style="color:white;">NO ONE RUNS BEYOND YOU</p></strong>
+				</div>
+			</div>
+		
+		</div>
+		<br><br>
+		
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+			   
+			    <ul class="nav navbar-nav">
+			      <li ><a href="Addsubject1.html">Add Subject</a></li>
+			      <li class="active"><a href="DeleteSubject.html">Delete Subject</a></li>
+			      
+			    </ul>
+			    
+
+ 		 	</div>
+		</nav>
+		
+		<br>
+		<br><br>
+		
+		<div class="container">
+		<div class="two">
+			<br><br>
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-10">	
+					<div class="form-group">
+    				<label for="email">Question:</label>
+   					 <input type="email" class="form-control" id="question" name="question">
+  					</div>
+  				</div>
+					
+			</div>		
+				
+			<br><br>
+			
+			
+		
+		
+
+		<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-6">
+					<button type="submit" class="btn btn-default">Delete</button>&nbsp&nbsp&nbsp
+					
+				</div>
+		</div>
+		<br><br>
+		</div>
+		</div>
+		</form>
+	</body>
+</html>

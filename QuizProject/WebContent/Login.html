@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body,html {
+    		
+    		
+    		background-color:#1D9988  ;
+
+   			 /* Full height */
+   			 height: 100%; 
+
+   			 /* Center and scale the image nicely */
+  			 background-position: center;
+   			 background-repeat: no-repeat;
+   			 background-size: cover;
+
+		}
+		.one{
+			position:absolute;
+			top:-20px;
+			right:80px;
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		function myfunction(){
+			
+			var user=document.getElementById("one").value;
+			var pass=document.getElementById("two").value;
+			
+			if(user==0 && pass==0){
+				alert("enter username and password");
+			}
+		}
+	</script>
+</head>
+<body>
+		<form action="FirstServlet" method="get">
+		<div class="container">
+			<center><h1   style="color:#641E16     ;font-size: 70px;">Quizer</h1></center>
+		
+		</div>
+	
+	
+		<br><br>
+	
+		<div class="container-fluid" style="background-color: white">
+		
+		<br><br>
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+				<div class="one">
+					<div class="dropdown">
+  						<button type="button" data-toggle="dropdown">Student
+ 						<span class="caret"></span></button>
+ 						<ul class="dropdown-menu">
+	   			 			<li class="active"><a href="Login.html">student</a></li>
+	   				 		<li><a href="TeacherLogin.html">Teacher</a></li>
+	   				 		
+ 			 			</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-8">
+				<h1><b>Student Login into Quizer</b></h1>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<label>Username:</label>
+					<input type="text" name="user" id="one"><br><br>
+					<label>Password:</label>
+					<input type="Password" name="password" id="two"><br><br>
+					<center><button type="submit" class="btn btn-default" onclick="myfunction()">Submit</button></center>
+					<br>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5"></div>
+				<div class="col-xs-6">
+					<a href="SignUp.html">New User Registration</a>
+				</div>
+				
+			</div>
+			<br>
+			<br>
+		</div>
+		
+		</form>
+	</body>
+</html>

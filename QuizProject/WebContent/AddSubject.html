@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body,html {
+    		
+    		
+    		background-color:#1D9988  ;
+
+   			 /* Full height */
+   			 height: 100%; 
+
+   			 /* Center and scale the image nicely */
+  			 background-position: center;
+   			 background-repeat: no-repeat;
+   			 background-size: cover;
+
+		}
+		.col-xs-5{
+			position:absolute;
+			top:25px;
+			right:80px;
+			font-size:20px;
+		}
+		p{
+			position:absolute;
+			top:-15px;
+			left:-35px;
+			
+		}
+		.two{
+			background-color:white;
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		function myfunction(){
+			
+			var user=document.getElementById("one").value;
+			var pass=document.getElementById("two").value;
+			
+			if(user==0 && pass==0){
+				alert("enter username and password");
+			}
+		}
+	</script>
+</head>
+<body>
+		<form action="FirstServlet" method="get">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-2">
+					<h1   style="color:#641E16     ;font-size: 50px;">Quizer</h1>
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-5">
+					 <ul class="nav navbar-nav navbar-right">
+	      				<li><a href="Addsubject.html" style="color:#283747;"><span class="glyphicon glyphicon-user"></span> Teacher</a></li>
+	     			 	<li><a href="TeacherLogin.html" style="color:#283747;"><span class="glyphicon glyphicon-log-in"></span> SignOut</a></li>
+	   				 </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-3">
+				<strong><p style="color:white;">NO ONE RUNS BEYOND YOU</p></strong>
+				</div>
+			</div>
+		
+		</div>
+		<br><br>
+		
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+			   
+			    <ul class="nav navbar-nav">
+			      <li><a href="Addsubject1.html">Add Subject</a></li>
+			      <li><a href="DeleteSubject.html">Delete Subject</a></li>
+			      
+			    </ul>
+			    
+
+ 		 	</div>
+		</nav>
+		<center> <b><h1 style="color: black;font-style: bold;font-size: 50px;"><strong>Playing and creating quizzes</strong></h1>
+		<h2 style="color: black;font-style: bold;font-size: 30px;"><strong>has never been more easy & fun! </strong></h2></b></center>
+		<br><br><br><br><br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner">
+		     
+		      <div class="item active">
+		      	<div class="container">
+		      	<br><br>
+		        <img src="Quiz6.jpg" alt="Los Angeles" style="width:33%;height: 300px;">
+		        <img src="Quiz10.jpg" alt="Los Angeles" style="width:33%;height:300px;">
+		        <img src="Quiz11.jpg" alt="Los Angeles" style="width:33%;height: 300px;">
+		         </div>
+		        <center><h1>Studies</h1></center>
+		      </div>
+		     
+		      
+		      <div class="item">
+		      <div class="container">
+		      	<br><br>
+		         <img src="Quiz5.jpg" alt="Chicago" style="width:33%;height: 300px;">
+		         <img src="Quiz12.jpg" alt="Chicago" style="width:33%;height: 300px;">
+		         <img src="Quiz13.jpg" alt="Chicago" style="width:33%;height: 300px;">
+		          </div>
+		        <center><h1>Movies</h1></center>
+		      </div>
+		     
+		    	
+		      <div class="item">
+		    	  <div class="container">
+		    	  <br><br>
+		         <img src="Quiz7.jpg" alt="New york" style="width:33%;height: 300px;">
+		         <img src="Quiz14.jpg" alt="New york" style="width:33%;height: 300px;">
+		         <img src="Quiz15.jpg" alt="New york" style="width:33%;height: 300px;">
+		          </div>
+		        <center><h1>Technology</h1></center>
+		      </div>
+		      
+		    </div>
+
+		
+		
+		
+		</form>
+	</body>
+</html>
